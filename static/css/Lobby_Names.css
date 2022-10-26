@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: broder-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-image: url(https://static.giga.de/wp-content/uploads/2014/09/team_graves_2.jpg);
+    background-size: cover;
+}
+ header
+{
+    position: static;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: 0.6s;
+    padding: 40px 0px;
+    z-index: 100000;
+}
+header .logo{
+    position: static;
+    font-weight: 700;
+    color: #000;
+    text-decoration: none;
+    font-size: 2em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    padding: 1% 4%;
+}
+header ul{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+header ul li{
+    position: relative;
+    list-style: none;
+}
+
+header ul li a{
+    position: relative;
+    margin: 0 150px;
+    text-decoration: none;
+    color: #000;
+    letter-spacing: 2px;
+    font-weight: 500px;
+    transition:0.6s;
+  }
+  .headline{
+    display: table;
+    position: relative;
+    align-items: left;
+  }
+  .game-type {
+    position: relative;
+    padding-left: 4%;
+    align-items: left;
+  }
+.headline-container {
+  display: table-cell;
+  justify-content: right;
+  width: 7%;
+}
+.banspace {
+  margin: 10px;
+}
+.headline-container-bans {
+  float: right;
+}
+.ban-logo {
+  width: 30px;
+  height: 30px;
+}
+.flex-container-blue {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .flex-container-blue > div {
+    background-color: rgb(63, 121, 247);
+    top: 0;
+    margin: 10px;
+    padding: 2px;
+    font-size: 20px;
+    text-align: center;
+    width: 8%;
+  }
+  .flexer-blue > div {
+    background-color: rgb(255, 255, 255);
+    margin: 3px;
+    padding: 2px;
+    font-size: 15px;
+    text-align: center;
+  }   
+
+  .flex-container-red {
+    display: flex;
+    justify-content: center;
+  }
+   .flex-container-red > div {
+        background-color: rgb(247, 63, 63);
+        top: 0;
+        margin: 10px;
+        padding: 2px;
+        font-size: 20px;
+        text-align: center;
+        width: 8%;
+      }
+      .flexer-red > div {
+        background-color: rgb(255, 255, 255);
+        margin: 2px;
+        padding: 20px;
+        font-size: 15px;
+  }
+  .Champ_Logo{
+    width: 60px;
+    height: 60px;
+  }
+    .txt{
+      float: right;
+    }
+  form {
+    text-align: center;
+}
+.Rank-display{
+  padding-left: 4%;
+  position: relative;
+  align-items: left;
+  display: table-cell;
+}
+.mainRunes {
+  display: table;
+
+}
+.secondRunes {
+  display: table;
+}
+.runeShard {
+  display: table;
+}
+.Rune {
+  display: table-cell;
+  width: 25px;
+  height: 25px;
+}
+#tooltip{
+  position: relative;
+  cursor: pointer;
+  padding: 7px;
+  font-size: 25px;
+  font-weight: bold;
+  font-family: sans-serif;
+}
+#RuneText{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  transform: translateX(-50%);
+  background-color: #000;
+  color: #fff;
+  white-space: nowrap;
+  padding: 10px 15px;
+  border-radius: 7px;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+#RuneText::before{
+  content: "";
+  position: absolute;
+  left: 50%;
+  top:100%;
+  transform: translateX(-50%);
+  border: 15px solid;
+  border-color: #000 #0000#0000 #0000;
+}
+#tooltip:hover #RuneText{
+  top: -130%;
+  visibility: visible;
+  opacity: 1;
+}
+.Runes{
+  display: flex;
+}
+
+.wordbreak{
+  word-break:break-all;
+  overflow: hidden;
+}
+
+.save-button{
+  margin: 0;
+  padding: 0;
+  border-width: 0;
+  background: none;
+  cursor: pointer;
+}
+.Gameplan{
+  text-align: center;
+}

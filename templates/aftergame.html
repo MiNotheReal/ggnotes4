@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+
+
+
+  <head>
+    <title>Aftergame</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Lobby_Names.css')}}">
+  </head>
+
+  <body>
+    <header>
+      <a href="{{url_for('home')}}" class="logo">Home</a>
+      <ul>
+           <li><a href="/championsearch">Notes</a></li>
+           <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+      </ul>
+  </header>
+    
+
+    <div class="container">
+      <form class="form-signin" method="Post" action="">
+        {% import "bootstrap/wtf.html" as wtf %}
+        {{ form.hidden_tag()}}
+      <div class="flex-container-blue">
+        <div>
+          {{champions[0]}}
+        {{wtf.form_field(form.Placeholder0)}}
+      </div>
+      <div>
+        {{champions[1]}}
+        {{wtf.form_field(form.Placeholder1)}}
+      </div>
+      <div>
+        {{champions[2]}}
+        {{wtf.form_field(form.Placeholder2)}}
+      </div>
+      <div>
+        {{champions[3]}}
+        {{wtf.form_field(form.Placeholder3)}}
+      </div>
+      <div>
+        {{champions[4]}}
+        {{wtf.form_field(form.Placeholder4, rows="10")}}
+      </div>
+
+      </div>
+  
+      <div class="flex-container-red">
+        <div>
+          {{champions[5]}}
+          {{wtf.form_field(form.Placeholder5)}}
+        </div>
+        <div>
+          {{champions[6]}}
+          {{wtf.form_field(form.Placeholder6)}}
+        </div>
+        <div>
+          {{champions[7]}}
+          {{wtf.form_field(form.Placeholder7)}}
+        </div>
+        <div>
+          {{champions[8]}}
+          {{wtf.form_field(form.Placeholder8)}}
+        </div>
+        <div>
+          {{champions[9]}}
+          {{wtf.form_field(form.Placeholder9)}}
+        </div>
+      
+  
+
+
+      </div>
+      <button class="save-button" type="submit"><img src="https://i.redd.it/dsuekyfbzfn91.png"/></button>
+    </form>
+  </body>
+
+
+</html>
+<!DOCTYPE html>

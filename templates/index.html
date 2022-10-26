@@ -1,0 +1,26 @@
+<DOCTYPE html>
+  <html>
+      <head>
+          <title>Home page</title>
+          <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+      </head>
+      <body>
+          <header>
+              <a href="{{url_for('home')}}" class="logo">Home</a>
+              <ul>
+                   <li><a href="/championsearch">Notes</a></li>
+                   <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+              </ul>
+          </header>
+          
+          <h1>Want to know more about your Teammates?</h1>
+          <p>Type in the Names of your Teammates.</p>
+          <form action="Lobby" method="post">
+              <br>
+              <input type="text" name="name_input">
+              <br>
+              <input type="submit" value="Search">
+          </form>
+          <section class="banner"></section>
+      </body>
+  </html>

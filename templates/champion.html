@@ -1,0 +1,25 @@
+<DOCTYPE html>
+  <html>
+      <head>
+          <title>Notes</title>
+          <link rel="stylesheet" href="{{url_for('static', filename='css/home.css')}}">
+      </head>
+      <body>
+          <header>
+              <a href="{{url_for('home')}}" class="logo">Home</a>
+              <ul>
+                   <li><a href="/championsearch">Notes</a></li>
+                   <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+              </ul>
+          </header>
+          <form class="form-signin" method="Post" action="">
+            {% import "bootstrap/wtf.html" as wtf %}
+            {{ form.hidden_tag()}}
+          <div>
+          <h1>{{champion}}</h1>
+          {{wtf.form_field(form.Placeholder0, rows="10")}}
+        </div>
+        <button class="save-button" type="submit"><img src="https://i.redd.it/dsuekyfbzfn91.png"/></button>
+        </form>
+      </body>
+  </html>

@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Ingame</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/Lobby_Names.css')}}">
+  </head>
+  <body>
+    <header>
+      <a href="{{url_for('home')}}" class="logo">Home</a>
+      <ul>
+           <li><a href="/championsearch">Notes</a></li>
+           <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+      </ul>
+  </header>
+  <div class="headline">
+    <div class="Rank-display"><h2>{{GameType}}</h2></div>
+    <div class="headline-container">
+    <h2>Bans: </h2>
+    <div class="headline-container-bans">
+      <img src={{bans[0]}} class="ban-logo">
+      <img src={{bans[1]}} class="ban-logo">
+      <img src={{bans[2]}} class="ban-logo">
+      <img src={{bans[3]}} class="ban-logo">
+      <img src={{bans[4]}} class="ban-logo">
+      <div class="banspace"></div>
+      <img src={{bans[5]}} class="ban-logo">
+      <img src={{bans[6]}} class="ban-logo">
+      <img src={{bans[7]}} class="ban-logo">
+      <img src={{bans[8]}} class="ban-logo">
+      <img src={{bans[9]}} class="ban-logo">
+      </div>
+  </div>
+</div>
+<div class="User-Accounts">
+<div class="flex-container-blue">
+  <div class="flexer-blue">
+    {{names[0]}}
+    <div class="Champlogobox">
+      <img src={{Champ_Logos[0]}} class="Champ_Logo">
+
+      <div class="txt">
+        Winrate: {{winrates[0]}}%
+        <br> {{Wins[0]}} Wins
+        <br> {{Games[0]}} Games
+      </div>
+    </div>
+    <div class="wordbreak">
+    {{champion_infos[0]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[0]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[0]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[1]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[1]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[2]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[2]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[3]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[3]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[4]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[4]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[5]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[5]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[6]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[7]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[8]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[1]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[1]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[1]}}%
+        <br> {{Wins[1]}} Wins
+        <br> {{Games[1]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[1]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[9]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[9]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[10]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[10]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[11]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[11]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[12]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[12]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[13]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[13]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[14]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[14]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[15]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[16]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[17]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[2]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[2]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[2]}}%
+        <br> {{Wins[2]}} Wins
+        <br> {{Games[2]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[2]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[18]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[18]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[19]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[19]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[20]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[20]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[21]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[21]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[22]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[22]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[23]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[23]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[24]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[25]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[26]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[3]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[3]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[3]}}%
+        <br> {{Wins[3]}} Wins
+        <br> {{Games[3]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[3]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[27]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[27]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[28]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[28]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[29]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[29]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[30]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[30]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[31]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[31]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[32]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[32]}}.png class="Rune"></span>
+      </div>  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[33]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[34]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[35]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>  
+  <div class="flexer-blue">
+    {{names[4]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[4]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[4]}}%
+        <br> {{Wins[4]}} Wins
+        <br> {{Games[4]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[4]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[36]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[36]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[37]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[37]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[38]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[38]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[39]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[39]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[40]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[40]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[41]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[41]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[42]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[43]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[44]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+</div>
+</div>
+
+<div class="flex-container-red">
+  <div class="flexer-blue">
+    {{names[5]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[5]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[5]}}%
+        <br> {{Wins[5]}} Wins
+        <br> {{Games[5]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[5]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[45]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[45]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[46]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[46]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[47]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[47]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[48]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[48]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[49]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[49]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[50]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[50]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[51]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[52]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[53]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[6]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[6]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[6]}}%
+        <br> {{Wins[6]}} Wins
+        <br> {{Games[6]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[6]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[54]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[54]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[55]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[55]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[56]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[56]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[57]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[57]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[58]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[58]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[59]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[59]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[60]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[61]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[62]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[7]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[7]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[7]}}%
+        <br> {{Wins[7]}} Wins
+        <br> {{Games[7]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[7]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[63]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[63]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[64]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[64]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[65]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[65]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[66]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[66]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[67]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[67]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[68]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[68]}}.png class="Rune"></span>
+      </div>
+  
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[69]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[70]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[71]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  <div class="flexer-blue">
+    {{names[8]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[8]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[8]}}%
+        <br> {{Wins[8]}} Wins
+        <br> {{Games[8]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[8]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[72]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[72]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[73]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[73]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[74]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[74]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[75]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[75]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[76]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[76]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[77]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[77]}}.png class="Rune"></span>
+      </div>
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[78]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[79]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[80]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  <div class="flexer-blue">
+    {{names[9]}}
+    <div>
+      <div class="Champlogobox">
+      <img src={{Champ_Logos[9]}} class="Champ_Logo">
+      <div class="txt">
+        Winrate: {{winrates[9]}}%
+        <br> {{Wins[9]}} Wins
+        <br> {{Games[9]}} Games
+      </div>
+    </div>
+  </div>
+  <div class="wordbreak">
+    {{champion_infos[9]}}
+  </div>
+  <div class="Runes">
+    <div class="mainRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[81]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[81]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[82]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[82]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[83]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[83]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[84]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[84]}}.png class="Rune"></span>
+      </div>
+      </div>
+      <div class="secondRunes">
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[85]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[85]}}.png class="Rune"></span>
+      </div>
+      <div id="tooltip">
+        <span id="RuneText">{{runeNames[86]}}</span>
+        <span><img src=https://opgg-static.akamaized.net/images/lol/perk/{{runes[86]}}.png class="Rune"></span>
+      </div>
+    <div class="runeShard">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[87]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[88]}}.png class="Rune">
+      <img src=https://opgg-static.akamaized.net/images/lol/perkShard/{{runes[89]}}.png class="Rune">
+    </div>
+  </div>
+  </div>
+  </div>
+  </div>
+  
+  
+  
+
+  <form class="aftergame" method="Post" action="{{url_for('aftergame', champions=champions) }}">
+    <input type="submit" value="Make Notes!">
+  </form>
+  <div class="Gameplan">
+  <h1>Gameplan</h1>
+  {% import "bootstrap/wtf.html" as wtf %}
+  {{ form.hidden_tag()}}
+  {{wtf.form_field(form.Gameplan, cols="20", rows="15", id="larger", style="width: 50%; height: 20%; font-size: 20px;")}}
+  </div>
+</body>
+</html>
+
+

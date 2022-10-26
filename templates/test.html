@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="UTF-8">
+  </head>
+ <body>
+  <form class="form-signin" method="Post" action="">
+    {% import "bootstrap/wtf.html" as wtf %}
+    {{ form.hidden_tag()}}
+    <div>
+    {{wtf.form_field(form.Aatrox)}}
+  </div>
+
+  
+
+
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Safe Changes!</button>
+</form>
+
+ </body>
+
+</html>

@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- custom css file link  -->
+   <link rel="stylesheet" href="{{url_for('static', filename='css/repulsive.css')}}">
+
+</head>
+<body>
+   <header>
+      <a href="{{url_for('home')}}" class="logo">Home</a>
+      <ul>
+           <li><a href="/championsearch">Notes</a></li>
+           <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+      </ul>
+  </header>
+   
+<div class="container">
+
+   <h1 class="heading">type to search images</h1>
+
+   <input type="text" placeholder="search images" id="search-box">
+
+   <div class="image-container">
+
+      <div class="image" data-title="Aatrox">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/cc/AatroxSquare.png" alt="">
+         <a href="{{url_for('champion', name='Aatrox')}}">Aatrox</a>
+         </div>
+         <div class="image" data-title="Ahri">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/18/AhriSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ahri')}}">Ahri</a>
+         </div>
+         <div class="image" data-title="Akali">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a5/AkaliSquare.png" alt="">
+         <a href="{{url_for('champion', name='Akali')}}">Akali</a>
+         </div>
+         <div class="image" data-title="Akshan">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3b/AkshanSquare.png" alt="">
+         <a href="{{url_for('champion', name='Akshan')}}">Akshan</a>
+         </div>
+         <div class="image" data-title="Alistar">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/34/AlistarSquare.png" alt="">
+         <a href="{{url_for('champion', name='Alistar')}}">Alistar</a>
+         </div>
+         <div class="image" data-title="Amumu">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/AmumuSquare.png" alt="">
+         <a href="{{url_for('champion', name='Amumu')}}">Amumu</a>
+         </div>
+         <div class="image" data-title="Anivia">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/AniviaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Anivia')}}">Anivia</a>
+         </div>
+         <div class="image" data-title="Annie">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/AnnieSquare.png" alt="">
+         <a href="{{url_for('champion', name='Annie')}}">Annie</a>
+         </div>
+         <div class="image" data-title="Aphelios">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/ApheliosSquare.png" alt="">
+         <a href="{{url_for('champion', name='Aphelios')}}">Aphelios</a>
+         </div>
+         <div class="image" data-title="Ashe">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4a/AsheSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ashe')}}">Ashe</a>
+         </div>
+         <div class="image" data-title="Aurelion Sol">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/Aurelion_SolSquare.png" alt="">
+         <a href="{{url_for('champion', name='Aurelion Sol')}}">Aurelion Sol</a>
+         </div>
+         <div class="image" data-title="Azir">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f7/AzirSquare.png" alt="">
+         <a href="{{url_for('champion', name='Azir')}}">Azir</a>
+         </div>
+         <div class="image" data-title="Bard">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/BardSquare.png" alt="">
+         <a href="{{url_for('champion', name='Bard')}}">Bard</a>
+         </div>
+         <div class="image" data-title="Bel'Veth">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/belveth.png" alt="">
+         <a href="{{url_for('champion', name='Bel\'Veth')}}">Bel'Veth</a>
+         </div>
+         <div class="image" data-title="Blitzcrank">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/BlitzcrankSquare.png" alt="">
+         <a href="{{url_for('champion', name='Blitzcrank')}}">Blitzcrank</a>
+         </div>
+         <div class="image" data-title="Brand">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ab/BrandSquare.png" alt="">
+         <a href="{{url_for('champion', name='Brand')}}">Brand</a>
+         </div>
+         <div class="image" data-title="Braum">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b6/BraumSquare.png" alt="">
+         <a href="{{url_for('champion', name='Braum')}}">Braum</a>
+         </div>
+         <div class="image" data-title="Caitlyn">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e6/CaitlynSquare.png" alt="">
+         <a href="{{url_for('champion', name='Caitlyn')}}">Caitlyn</a>
+         </div>
+         <div class="image" data-title="Camille">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/CamilleSquare.png" alt="">
+         <a href="{{url_for('champion', name='Camille')}}">Camille</a>
+         </div>
+         <div class="image" data-title="Cassiopeia">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/CassiopeiaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Cassiopeia')}}">Cassiopeia</a>
+         </div>
+         <div class="image" data-title="Cho'Gath">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/Cho%27GathSquare.png" alt="">
+         <a href="{{url_for('champion', name='Cho\'Gath')}}">Cho'Gath</a>
+         </div>
+         <div class="image" data-title="Corki">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/CorkiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Corki')}}">Corki</a>
+         </div>
+         <div class="image" data-title="Darius">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/DariusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Darius')}}">Darius</a>
+         </div>
+         <div class="image" data-title="Diana">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/90/DianaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Diana')}}">Diana</a>
+         </div>
+         <div class="image" data-title="Draven">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d7/DravenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Draven')}}">Draven</a>
+         </div>
+         <div class="image" data-title="Dr. Mundo">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/35/Dr._MundoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Dr. Mundo')}}">Dr. Mundo</a>
+         </div>
+         <div class="image" data-title="Ekko">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/EkkoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ekko')}}">Ekko</a>
+         </div>
+         <div class="image" data-title="Elise">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/EliseSquare.png" alt="">
+         <a href="{{url_for('champion', name='Elise')}}">Elise</a>
+         </div>
+         <div class="image" data-title="Evelynn">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5b/EvelynnSquare.png" alt="">
+         <a href="{{url_for('champion', name='Evelynn')}}">Evelynn</a>
+         </div>
+         <div class="image" data-title="Ezreal">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c3/EzrealSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ezreal')}}">Ezreal</a>
+         </div>
+         <div class="image" data-title="Fiddlesticks">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/FiddlesticksSquare.png" alt="">
+         <a href="{{url_for('champion', name='Fiddlesticks')}}">Fiddlesticks</a>
+         </div>
+         <div class="image" data-title="Fiora">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/FioraSquare.png" alt="">
+         <a href="{{url_for('champion', name='Fiora')}}">Fiora</a>
+         </div>
+         <div class="image" data-title="Fizz">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/db/FizzSquare.png" alt="">
+         <a href="{{url_for('champion', name='Fizz')}}">Fizz</a>
+         </div>
+         <div class="image" data-title="Galio">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/40/GalioSquare.png" alt="">
+         <a href="{{url_for('champion', name='Galio')}}">Galio</a>
+         </div>
+         <div class="image" data-title="Gangplank">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fe/GangplankSquare.png" alt="">
+         <a href="{{url_for('champion', name='Gangplank')}}">Gangplank</a>
+         </div>
+         <div class="image" data-title="Garen">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ea/GarenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Garen')}}">Garen</a>
+         </div>
+         <div class="image" data-title="Gnar">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6b/GnarSquare.png" alt="">
+         <a href="{{url_for('champion', name='Gnar')}}">Gnar</a>
+         </div>
+         <div class="image" data-title="Gragas">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/67/GragasSquare.png" alt="">
+         <a href="{{url_for('champion', name='Gragas')}}">Gragas</a>
+         </div>
+         <div class="image" data-title="Graves">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/26/GravesSquare.png" alt="">
+         <a href="{{url_for('champion', name='Graves')}}">Graves</a>
+         </div>
+         <div class="image" data-title="Gwen">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/df/GwenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Gwen')}}">Gwen</a>
+         </div>
+         <div class="image" data-title="Hecarim">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4c/HecarimSquare.png" alt="">
+         <a href="{{url_for('champion', name='Hecarim')}}">Hecarim</a>
+         </div>
+         <div class="image" data-title="Heimerdinger">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/HeimerdingerSquare.png" alt="">
+         <a href="{{url_for('champion', name='Heimerdinger')}}">Heimerdinger</a>
+         </div>
+         <div class="image" data-title="Illaoi">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/IllaoiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Illaoi')}}">Illaoi</a>
+         </div>
+         <div class="image" data-title="Irelia">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/72/IreliaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Irelia')}}">Irelia</a>
+         </div>
+         <div class="image" data-title="Ivern">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/IvernSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ivern')}}">Ivern</a>
+         </div>
+         <div class="image" data-title="Janna">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3f/JannaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Janna')}}">Janna</a>
+         </div>
+         <div class="image" data-title="Jarvan IV">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6c/Jarvan_IVSquare.png" alt="">
+         <a href="{{url_for('champion', name='Jarvan IV')}}">Jarvan IV</a>
+         </div>
+         <div class="image" data-title="Jax">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/0f/JaxSquare.png" alt="">
+         <a href="{{url_for('champion', name='Jax')}}">Jax</a>
+         </div>
+         <div class="image" data-title="Jayce">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/JayceSquare.png" alt="">
+         <a href="{{url_for('champion', name='Jayce')}}">Jayce</a>
+         </div>
+         <div class="image" data-title="Jhin">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/JhinSquare.png" alt="">
+         <a href="{{url_for('champion', name='Jhin')}}">Jhin</a>
+         </div>
+         <div class="image" data-title="Jinx">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e2/JinxSquare.png" alt="">
+         <a href="{{url_for('champion', name='Jinx')}}">Jinx</a>
+         </div>
+         <div class="image" data-title="Kai'Sa">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/Kai%27SaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kai\'Sa')}}">Kai'Sa</a>
+         </div>
+         <div class="image" data-title="Kalista">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/aa/KalistaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kalista')}}">Kalista</a>
+         </div>
+         <div class="image" data-title="Karma">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/KarmaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Karma')}}">Karma</a>
+         </div>
+         <div class="image" data-title="Karthus">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/KarthusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Karthus')}}">Karthus</a>
+         </div>
+         <div class="image" data-title="Kassadin">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/57/KassadinSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kassadin')}}">Kassadin</a>
+         </div>
+         <div class="image" data-title="Katarina">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ae/KatarinaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Katarina')}}">Katarina</a>
+         </div>
+         <div class="image" data-title="Kayle">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bd/KayleSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kayle')}}">Kayle</a>
+         </div>
+         <div class="image" data-title="Kayn">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/37/KaynSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kayn')}}">Kayn</a>
+         </div>
+         <div class="image" data-title="Kennen">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/69/KennenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kennen')}}">Kennen</a>
+         </div>
+         <div class="image" data-title="Kha'Zix">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/14/Kha%27ZixSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kha\'Zix')}}">Kha'Zix</a>
+         </div>
+         <div class="image" data-title="Kindred">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6e/KindredSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kindred')}}">Kindred</a>
+         </div>
+         <div class="image" data-title="Kled">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/KledSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kled')}}">Kled</a>
+         </div>
+         <div class="image" data-title="Kog'Maw">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/45/Kog%27MawSquare.png" alt="">
+         <a href="{{url_for('champion', name='Kog\'Maw')}}">Kog'Maw</a>
+         </div>
+         <div class="image" data-title="LeBlanc">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/LeBlancSquare.png" alt="">
+         <a href="{{url_for('champion', name='LeBlanc')}}">LeBlanc</a>
+         </div>
+         <div class="image" data-title="Lee Sin">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4f/Lee_SinSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lee Sin')}}">Lee Sin</a>
+         </div>
+         <div class="image" data-title="Leona">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/54/LeonaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Leona')}}">Leona</a>
+         </div>
+         <div class="image" data-title="Lillia">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/49/LilliaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lillia')}}">Lillia</a>
+         </div>
+         <div class="image" data-title="Lissandra">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/36/LissandraSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lissandra')}}">Lissandra</a>
+         </div>
+         <div class="image" data-title="Lucian">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1e/LucianSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lucian')}}">Lucian</a>
+         </div>
+         <div class="image" data-title="Lulu">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/91/LuluSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lulu')}}">Lulu</a>
+         </div>
+         <div class="image" data-title="Lux">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/01/LuxSquare.png" alt="">
+         <a href="{{url_for('champion', name='Lux')}}">Lux</a>
+         </div>
+         <div class="image" data-title="Malphite">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/6f/MalphiteSquare.png" alt="">
+         <a href="{{url_for('champion', name='Malphite')}}">Malphite</a>
+         </div>
+         <div class="image" data-title="Malzahar">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a7/MalzaharSquare.png" alt="">
+         <a href="{{url_for('champion', name='Malzahar')}}">Malzahar</a>
+         </div>
+         <div class="image" data-title="Maokai">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/64/MaokaiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Maokai')}}">Maokai</a>
+         </div>
+         <div class="image" data-title="Master Yi">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b2/Master_YiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Master Yi')}}">Master Yi</a>
+         </div>
+         <div class="image" data-title="Miss Fortune">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9d/MissFortuneSquare.png" alt="">
+         <a href="{{url_for('champion', name='Miss Fortune')}}">Miss Fortune</a>
+         </div>
+         <div class="image" data-title="Wukong">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/monkeyking.png" alt="">
+         <a href="{{url_for('champion', name='Wukong')}}">Wukong</a>
+         </div>
+         <div class="image" data-title="Mordekaiser">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/4d/MordekaiserSquare.png" alt="">
+         <a href="{{url_for('champion', name='Mordekaiser')}}">Mordekaiser</a>
+         </div>
+         <div class="image" data-title="Morgana">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/MorganaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Morgana')}}">Morgana</a>
+         </div>
+         <div class="image" data-title="Nami">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d2/NamiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nami')}}">Nami</a>
+         </div>
+         <div class="image" data-title="Nasus">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/58/NasusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nasus')}}">Nasus</a>
+         </div>
+         <div class="image" data-title="Nautilus">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/NautilusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nautilus')}}">Nautilus</a>
+         </div>
+         <div class="image" data-title="Neeko">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/NeekoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Neeko')}}">Neeko</a>
+         </div>
+         <div class="image" data-title="Nidalee">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/NidaleeSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nidalee')}}">Nidalee</a>
+         </div>
+         <div class="image" data-title="Nilah">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/nilah.png" alt="">
+         <a href="{{url_for('champion', name='Nilah')}}">Nilah</a>
+         </div>
+         <div class="image" data-title="Nocturne">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/NocturneSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nocturne')}}">Nocturne</a>
+         </div>
+         <div class="image" data-title="Nunu & Willump">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/be/Nunu_%26_WillumpSquare.png" alt="">
+         <a href="{{url_for('champion', name='Nunu & Willump')}}">Nunu & Willump</a>
+         </div>
+         <div class="image" data-title="Olaf">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2b/OlafSquare.png" alt="">
+         <a href="{{url_for('champion', name='Olaf')}}">Olaf</a>
+         </div>
+         <div class="image" data-title="Orianna">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b0/OriannaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Orianna')}}">Orianna</a>
+         </div>
+         <div class="image" data-title="Ornn">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/31/OrnnSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ornn')}}">Ornn</a>
+         </div>
+         <div class="image" data-title="Pantheon">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/9b/PantheonSquare.png" alt="">
+         <a href="{{url_for('champion', name='Pantheon')}}">Pantheon</a>
+         </div>
+         <div class="image" data-title="Poppy">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e3/PoppySquare.png" alt="">
+         <a href="{{url_for('champion', name='Poppy')}}">Poppy</a>
+         </div>
+         <div class="image" data-title="Pyke">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/83/PykeSquare.png" alt="">
+         <a href="{{url_for('champion', name='Pyke')}}">Pyke</a>
+         </div>
+         <div class="image" data-title="Qiyana">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/ca/QiyanaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Qiyana')}}">Qiyana</a>
+         </div>
+         <div class="image" data-title="Quinn">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/QuinnSquare.png" alt="">
+         <a href="{{url_for('champion', name='Quinn')}}">Quinn</a>
+         </div>
+         <div class="image" data-title="Rakan">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8b/RakanSquare.png" alt="">
+         <a href="{{url_for('champion', name='Rakan')}}">Rakan</a>
+         </div>
+         <div class="image" data-title="Rammus">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7c/RammusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Rammus')}}">Rammus</a>
+         </div>
+         <div class="image" data-title="Rek'Sai">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3e/Rek%27SaiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Rek\'Sai')}}">Rek'Sai</a>
+         </div>
+         <div class="image" data-title="Rell">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/rell.png" alt="">
+         <a href="{{url_for('champion', name='Rell')}}">Rell</a>
+         </div>
+         <div class="image" data-title="Renata Glasc">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/Renata_GlascSquare.png" alt="">
+         <a href="{{url_for('champion', name='Renata Glasc')}}">Renata Glasc</a>
+         </div>
+         <div class="image" data-title="Renekton">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fc/RenektonSquare.png" alt="">
+         <a href="{{url_for('champion', name='Renekton')}}">Renekton</a>
+         </div>
+         <div class="image" data-title="Rengar">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f1/RengarSquare.png" alt="">
+         <a href="{{url_for('champion', name='Rengar')}}">Rengar</a>
+         </div>
+         <div class="image" data-title="Riven">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/46/RivenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Riven')}}">Riven</a>
+         </div>
+         <div class="image" data-title="Rumble">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/13/RumbleSquare.png" alt="">
+         <a href="{{url_for('champion', name='Rumble')}}">Rumble</a>
+         </div>
+         <div class="image" data-title="Ryze">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/28/RyzeSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ryze')}}">Ryze</a>
+         </div>
+         <div class="image" data-title="Samira">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/samira.png" alt="">
+         <a href="{{url_for('champion', name='Samira')}}">Samira</a>
+         </div>
+         <div class="image" data-title="Sejuani">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/SejuaniSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sejuani')}}">Sejuani</a>
+         </div>
+         <div class="image" data-title="Senna">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/21/SennaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Senna')}}">Senna</a>
+         </div>
+         <div class="image" data-title="Seraphine">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/seraphine.png" alt="">
+         <a href="{{url_for('champion', name='Seraphine')}}">Seraphine</a>
+         </div>
+         <div class="image" data-title="Sett">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/19/SettSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sett')}}">Sett</a>
+         </div>
+         <div class="image" data-title="Shaco">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/93/ShacoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Shaco')}}">Shaco</a>
+         </div>
+         <div class="image" data-title="Shen">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d3/ShenSquare.png" alt="">
+         <a href="{{url_for('champion', name='Shen')}}">Shen</a>
+         </div>
+         <div class="image" data-title="Shyvana">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f6/ShyvanaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Shyvana')}}">Shyvana</a>
+         </div>
+         <div class="image" data-title="Singed">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/96/SingedSquare.png" alt="">
+         <a href="{{url_for('champion', name='Singed')}}">Singed</a>
+         </div>
+         <div class="image" data-title="Sion">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/61/SionSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sion')}}">Sion</a>
+         </div>
+         <div class="image" data-title="Sivir">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/e1/SivirSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sivir')}}">Sivir</a>
+         </div>
+         <div class="image" data-title="Skarner">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/80/SkarnerSquare.png" alt="">
+         <a href="{{url_for('champion', name='Skarner')}}">Skarner</a>
+         </div>
+         <div class="image" data-title="Sona">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/56/SonaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sona')}}">Sona</a>
+         </div>
+         <div class="image" data-title="Soraka">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8d/SorakaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Soraka')}}">Soraka</a>
+         </div>
+         <div class="image" data-title="Swain">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8c/SwainSquare.png" alt="">
+         <a href="{{url_for('champion', name='Swain')}}">Swain</a>
+         </div>
+         <div class="image" data-title="Sylas">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/eb/SylasSquare.png" alt="">
+         <a href="{{url_for('champion', name='Sylas')}}">Sylas</a>
+         </div>
+         <div class="image" data-title="Syndra">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/65/SyndraSquare.png" alt="">
+         <a href="{{url_for('champion', name='Syndra')}}">Syndra</a>
+         </div>
+         <div class="image" data-title="Tahm Kench">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/03/Tahm_KenchSquare.png" alt="">
+         <a href="{{url_for('champion', name='Tahm Kench')}}">Tahm Kench</a>
+         </div>
+         <div class="image" data-title="Taliyah">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/2/2d/TaliyahSquare.png" alt="">
+         <a href="{{url_for('champion', name='Taliyah')}}">Taliyah</a>
+         </div>
+         <div class="image" data-title="Talon">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/TalonSquare.png" alt="">
+         <a href="{{url_for('champion', name='Talon')}}">Talon</a>
+         </div>
+         <div class="image" data-title="Taric">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/TaricSquare.png" alt="">
+         <a href="{{url_for('champion', name='Taric')}}">Taric</a>
+         </div>
+         <div class="image" data-title="Teemo">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/04/TeemoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Teemo')}}">Teemo</a>
+         </div>
+         <div class="image" data-title="Thresh">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7b/ThreshSquare.png" alt="">
+         <a href="{{url_for('champion', name='Thresh')}}">Thresh</a>
+         </div>
+         <div class="image" data-title="Tristana">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/06/TristanaSquare.png" alt="">
+         <a href="{{url_for('champion', name='Tristana')}}">Tristana</a>
+         </div>
+         <div class="image" data-title="Trundle">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c4/TrundleSquare.png" alt="">
+         <a href="{{url_for('champion', name='Trundle')}}">Trundle</a>
+         </div>
+         <div class="image" data-title="Tryndamere">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/5f/TryndamereSquare.png" alt="">
+         <a href="{{url_for('champion', name='Tryndamere')}}">Tryndamere</a>
+         </div>
+         <div class="image" data-title="Twisted Fate">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/fb/Twisted_FateSquare.png" alt="">
+         <a href="{{url_for('champion', name='Twisted Fate')}}">Twisted Fate</a>
+         </div>
+         <div class="image" data-title="Twitch">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/79/TwitchSquare.png" alt="">
+         <a href="{{url_for('champion', name='Twitch')}}">Twitch</a>
+         </div>
+         <div class="image" data-title="Udyr">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d1/UdyrSquare.png" alt="">
+         <a href="{{url_for('champion', name='Udyr')}}">Udyr</a>
+         </div>
+         <div class="image" data-title="Urgot">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/88/UrgotSquare.png" alt="">
+         <a href="{{url_for('champion', name='Urgot')}}">Urgot</a>
+         </div>
+         <div class="image" data-title="Varus">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c2/VarusSquare.png" alt="">
+         <a href="{{url_for('champion', name='Varus')}}">Varus</a>
+         </div>
+         <div class="image" data-title="Vayne">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/9/95/VayneSquare.png" alt="">
+         <a href="{{url_for('champion', name='Vayne')}}">Vayne</a>
+         </div>
+         <div class="image" data-title="Veigar">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/8f/VeigarSquare.png" alt="">
+         <a href="{{url_for('champion', name='Veigar')}}">Veigar</a>
+         </div>
+         <div class="image" data-title="Vel'Koz">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/0/05/Vel%27KozSquare.png" alt="">
+         <a href="{{url_for('champion', name='Vel\'Koz')}}">Vel'Koz</a>
+         </div>
+         <div class="image" data-title="Vex">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/e/ef/VexSquare.png" alt="">
+         <a href="{{url_for('champion', name='Vex')}}">Vex</a>
+         </div>
+         <div class="image" data-title="Vi">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/ViSquare.png" alt="">
+         <a href="{{url_for('champion', name='Vi')}}">Vi</a>
+         </div>
+         <div class="image" data-title="Viego">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/3/3d/ViegoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Viego')}}">Viego</a>
+         </div>
+         <div class="image" data-title="Viktor">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/a3/ViktorSquare.png" alt="">
+         <a href="{{url_for('champion', name='Viktor')}}">Viktor</a>
+         </div>
+         <div class="image" data-title="Vladimir">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/75/VladimirSquare.png" alt="">
+         <a href="{{url_for('champion', name='Vladimir')}}">Vladimir</a>
+         </div>
+         <div class="image" data-title="Volibear">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/f/f9/VolibearSquare.png" alt="">
+         <a href="{{url_for('champion', name='Volibear')}}">Volibear</a>
+         </div>
+         <div class="image" data-title="Warwick">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/4/42/WarwickSquare.png" alt="">
+         <a href="{{url_for('champion', name='Warwick')}}">Warwick</a>
+         </div>
+         <div class="image" data-title="Xayah">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b5/XayahSquare.png" alt="">
+         <a href="{{url_for('champion', name='Xayah')}}">Xayah</a>
+         </div>
+         <div class="image" data-title="Xerath">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/7a/XerathSquare.png" alt="">
+         <a href="{{url_for('champion', name='Xerath')}}">Xerath</a>
+         </div>
+         <div class="image" data-title="Xin Zhao">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/6/63/Xin_ZhaoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Xin Zhao')}}">Xin Zhao</a>
+         </div>
+         <div class="image" data-title="Yasuo">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/c/c0/YasuoSquare.png" alt="">
+         <a href="{{url_for('champion', name='Yasuo')}}">Yasuo</a>
+         </div>
+         <div class="image" data-title="Yone">
+         <img src="https://cdn.mobalytics.gg/assets/lol/images/dd/champions/icons/yone.png" alt="">
+         <a href="{{url_for('champion', name='Yone')}}">Yone</a>
+         </div>
+         <div class="image" data-title="Yorick">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/d/d8/YorickSquare.png" alt="">
+         <a href="{{url_for('champion', name='Yorick')}}">Yorick</a>
+         </div>
+         <div class="image" data-title="Yuumi">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/7/70/YuumiSquare.png" alt="">
+         <a href="{{url_for('champion', name='Yuumi')}}">Yuumi</a>
+         </div>
+         <div class="image" data-title="Zac">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/81/ZacSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zac')}}">Zac</a>
+         </div>
+         <div class="image" data-title="Zed">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/bb/ZedSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zed')}}">Zed</a>
+         </div>
+         <div class="image" data-title="Zeri">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/8/85/ZeriSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zeri')}}">Zeri</a>
+         </div>
+         <div class="image" data-title="Ziggs">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/5/55/ZiggsSquare.png" alt="">
+         <a href="{{url_for('champion', name='Ziggs')}}">Ziggs</a>
+         </div>
+         <div class="image" data-title="Zilean">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/a/ac/ZileanSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zilean')}}">Zilean</a>
+         </div>
+         <div class="image" data-title="Zoe">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/b/b8/ZoeSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zoe')}}">Zoe</a>
+         </div>
+         <div class="image" data-title="Zyra">
+         <img src="https://static.wikia.nocookie.net/lolesports_gamepedia_en/images/1/1a/ZyraSquare.png" alt="">
+         <a href="{{url_for('champion', name='Zyra')}}">Zyra</a>
+         </div>
+         </div>
+
+
+</div>
+
+<script>
+
+let searchBox = document.querySelector('#search-box');
+let images = document.querySelectorAll('.container .image-container .image');
+
+searchBox.oninput = () =>{
+   images.forEach(hide => hide.style.display = 'none');
+   let value = searchBox.value;
+   images.forEach(filter =>{
+      let title = filter.getAttribute('data-title');
+      if(value == title){
+         filter.style.display = 'block';
+      }
+      if(searchBox.value == ''){
+         filter.style.display = 'block';
+      }
+   });
+};
+
+</script>
+
+</body>
+</html>

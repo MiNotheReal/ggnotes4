@@ -1,0 +1,31 @@
+<DOCTYPE html>
+    <html>
+            </head>
+            <title>Lobby</title>
+            <link rel="stylesheet" href="{{url_for('static', filename='css/Lobby_Names.css')}}">
+            <body>
+              <header>
+                <a href="{{url_for('home')}}" class="logo">Home</a>
+                <ul>
+                  <li><a href="/championsearch">Notes</a></li>
+                  <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+                </ul>
+            </header>
+                        
+            <div class="flex-container-blue">
+              <div class="flexer-blue">
+                {{Summoner_Names[0]}}
+                <div>{{tiers[0]}} {{ranks[0]}}</div>
+                <div>Winrate: {{winrates[0]}}</div>
+              </div>
+              <div class="flexer-blue">
+                {{Summoner_Names[1]}}
+                <div>{{tiers[1]}} {{ranks[1]}}</div>
+                <div>Winrate: {{winrates[1]}}</div>
+              </div>
+
+
+            </div>
+            
+        </body>
+    </html>

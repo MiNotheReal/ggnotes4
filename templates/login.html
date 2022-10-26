@@ -1,0 +1,38 @@
+<DOCTYPE html>
+    <html>
+
+        <head>
+            <title>Login</title>
+            <link rel="stylesheet" href="{{url_for('static', filename='css/signin.css')}}">
+        </head>
+        <body>
+            <header>
+                <a href="{{url_for('home')}}" class="logo">Home</a>
+                <ul>
+                     <li><a href="/championsearch">Notes</a></li>
+                     <li><a href="{{Url_LogedIn}}">{{LogedIn}}</a></li>
+                </ul>
+            </header>
+        </body>
+        {% extends "bootstrap/base.html" %}
+        
+        {% block content %}
+        <div class="container">
+  
+          <form class="form-signin" method="Post" action="/login">
+            <h2 class="form-signin-heading">Please sign in</h2>
+            {% import "bootstrap/wtf.html" as wtf %}
+            {{ form.hidden_tag()}}
+            {{ wtf.form_field(form.username)}}
+            {{ wtf.form_field(form.password)}}
+            {{ wtf.form_field(form.remember)}}
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+          <a href="{{url_for('signup')}}">Don't have an account? Sign Up!</a>
+        </div>
+        {% endblock %}
+
+
+
+</html>
+<!DOCTYPE html>
